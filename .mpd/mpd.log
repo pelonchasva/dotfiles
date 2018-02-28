@@ -1,0 +1,6 @@
+Feb 27 19:44 : exception: Failed to open /home/andy/.mpd/mpdstate: No such file or directory
+Feb 27 19:44 : config: option 'device' on line 12 was not recognized
+Feb 27 19:44 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Feb 27 19:44 : avahi: Service 'Music Player' successfully established.
+Feb 27 19:51 : client: [0] opened from 127.0.0.1:45820
+Feb 27 19:53 : client: [0] closed
