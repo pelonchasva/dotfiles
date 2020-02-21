@@ -1,0 +1,222 @@
+[
+    {
+        "name": "sddm",
+        "url": "",
+        "description": ""
+    },
+    {
+        "name": "neofetch",
+        "url": "",
+        "description": ""
+    },
+    {
+        "name": "nitrogen",
+        "url": "",
+        "description": ""
+    },
+    {
+        "name": "iw",
+        "url": "",
+        "description": ""
+    },
+    {
+        "name": "light",
+        "url": "",
+        "description": ""
+    },
+    {
+        "name": "i3-gaps",
+        "url": "",
+        "description": ""
+    },
+    {
+        "name": "dash",
+        "url": "",
+        "description": ""
+    },
+    {
+        "name": "dunst",
+        "url": "",
+        "description": ""
+    },
+    {
+        "name": "compton",
+        "url": "",
+        "description": ""
+    },
+    {
+        "name": "lshw",
+        "url": "",
+        "description": ""
+    },
+    {
+        "name": "rofi",
+        "url": "",
+        "description": ""
+    },
+    {
+        "name": "termite",
+        "url": "",
+        "description": ""
+    },
+    {
+        "name": "feh",
+        "url": "",
+        "description": ""
+    },
+    {
+        "name": "python-dbus",
+        "url": "",
+        "description": ""
+    },
+    {
+        "name": "python-pip",
+        "url": "",
+        "description": ""
+    },
+    {
+        "name": "wget",
+        "url": "",
+        "description": ""
+    },
+    {
+        "name": "xterm",
+        "url": "",
+        "description": ""
+    },
+    {
+        "name": "xrandr",
+        "url": "",
+        "description": ""
+    },
+    {
+        "name": "pulseaudio",
+        "url": "",
+        "description": ""
+    },
+    {
+        "name": "pulseaudio-alsa",
+        "url": "",
+        "description": ""
+    },
+    {
+        "name": "alsa-utils",
+        "url": "",
+        "description": ""
+    },
+    {
+        "name": "firefox",
+        "url": "",
+        "description": ""
+    },
+    {
+        "name": "openssh",
+        "url": "",
+        "description": ""
+    },
+    {
+        "name": "git",
+        "url": "",
+        "description": ""
+    },
+    {
+        "name": "dmidecode",
+        "url": "",
+        "description": ""
+    },
+    {
+        "name": "ranger",
+        "url": "",
+        "description": ""
+    },
+    {
+        "name": "scrot",
+        "url": "",
+        "description": ""
+    },
+    {
+        "name": "khal",
+        "url": "",
+        "description": ""
+    },
+    {
+        "name": "mpd",
+        "url": "",
+        "description": ""
+    },
+    {
+        "name": "ncmpcpp",
+        "url": "",
+        "description": ""
+    },
+    {
+        "name": "p7zip",
+        "url": "",
+        "description": ""
+    },
+    {
+        "name": "redshift",
+        "url": "",
+        "description": ""
+    },
+    {
+        "name": "vdirsyncer",
+        "url": "",
+        "description": ""
+    },
+    {
+        "name": "mopidy",
+        "url": "",
+        "description": ""
+    },
+    {
+        "name": "wireguard-tools",
+        "url": "",
+        "description": ""
+    },
+    {
+        "name": "wireguard-arch",
+        "url": "",
+        "description": ""
+    },
+    {
+        "name": "keepassxc",
+        "url": "",
+        "description": ""
+    },
+    {
+        "name": "htop",
+        "url": "",
+        "description": ""
+    },
+    {
+        "name": "thunar",
+        "url": "",
+        "description": ""
+    },
+    {
+        "name": "openbox",
+        "url": "",
+        "description": ""
+    },
+    {
+        "name": "obconf",
+        "url": "",
+        "description": ""
+    },
+    {
+        "name": "gimp",
+        "url": "",
+        "description": ""
+    },
+    {
+        "name": "libreoffice-still",
+        "url": "",
+        "description": ""
+    },
+    {
+        "name": "picom",
+        "url": "",
+        "description": ""
+    }
+]

@@ -1,0 +1,32 @@
+[
+    {
+        "name": "requests",
+        "url": "",
+        "description": ""
+    },
+    {
+        "name": "bs4",
+        "url": "",
+        "description": ""
+    },
+    {
+        "name": "html5lib",
+        "url": "",
+        "description": ""
+    },
+    {
+        "name": "tqdm",
+        "url": "",
+        "description": ""
+    },
+    {
+        "name": "wheel",
+        "url": "",
+        "description": ""
+    },
+    {
+        "name": "mopidy-iris",
+        "url": "",
+        "description": ""
+    }
+]

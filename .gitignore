@@ -1,0 +1,4 @@
+.env
+buildhere/
+**.log
+__pycache__/
