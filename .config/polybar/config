@@ -106,7 +106,7 @@ label =  %{A:termite -e vtop &:}%percentage%%
 [module/temperature]
 label-padding-left = 1
 type = custom/script
-exec = $HOME/.config/polybar/temperature.sh
+exec = ~/.config/polybar/temperature.sh
 interval = 1
 
 format-foreground = ${colors.magenta}
@@ -127,7 +127,7 @@ label =  %{A:LANG=en_US.utf8 TERM=xterm-256color termite -e vtop &:}%percenta
 [module/weather]
 label-padding-left = 1
 type = custom/script
-exec = "sh $HOME/.config/polybar/weather.sh"
+exec = "sh ~/.config/polybar/weather.sh"
 interval = 600
 label-font = 3
 
@@ -335,7 +335,7 @@ label-indicator-foreground = ${colors.black}
 
 [module/spotify]
 type = custom/script
-exec = sh $HOME/.config/polybar/spotify.sh
+exec = sh ~/.config/polybar/spotify.sh
 
 interval = 0.5
 label-maxlen = 70

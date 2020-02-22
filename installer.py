@@ -17,7 +17,7 @@ buildhere = f'{pwd}/buildhere'
 json_data_path = f'{pwd}/json_data'
 scripts_path = f'{pwd}/scripts'
 
-SUDO_PASSWORD = os.environ['SUDO_PASSWORD']
+SUDO_PASSWORD = os.environ.get('SUDO_PASSWORD')
 
 def get_config_locat():
     """
@@ -121,7 +121,7 @@ def install_yay_packages():
     yay = " ".join(yay_packages)
 
     print('Installing YAY packages')
-    run(f'echo "{SUDO_PASSWORD}" | sudo -S yay -S {yay}')
+    run(f'yay -S {yay}')
 
 def install_python_packages():
     """
