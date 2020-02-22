@@ -203,14 +203,18 @@ def cleanup():
     run('rm -rf ~/.themes')
     run('rm -rf ~/.config/gtk-2.0')
     run('rm -rf ~/.config/gtk-3.0')
+    run('rm -rf ~/.config/gtk-4.0')
 
     # Files
-    run('rm -rf ~/.bash_profile')
-    run('rm -rf ~/.xinitrc')
-    run('rm -rf ~/.Xresources')
-    run('rm -rf ~/.oh-my-zsh') # Required to reinstall oh-my-zsh
-    run('rm -rf ~/.zprofile')
-    run('rm -rf ~/.zshrc')
+    run('rm -f ~/.bash_profile')
+    run('rm -f ~/.xinitrc')
+    run('rm -f ~/.Xresources')
+    run('rm -f ~/.oh-my-zsh') # Required to reinstall oh-my-zsh
+    run('rm -f ~/.zprofile')
+    run('rm -f ~/.zsh_aliases.zsh')
+    run('rm -f ~/.zsh_functions.zsh')
+    run('rm -f ~/.zshrc')
+    run('rm -f ~/etc/sudoers.lecture')
 
 def copy_config():
     """
@@ -228,12 +232,15 @@ def copy_config():
     run(f'cp -R {pwd}/.themes ~/.themes')
     run(f'cp -R {pwd}/.config/gtk-2.0 ~/.config/gtk-2.0')
     run(f'cp -R {pwd}/.config/gtk-3.0 ~/.config/gtk-3.0')
+    run(f'cp -R {pwd}/.config/gtk-4.0 ~/.config/gtk-4.0')
 
     # Files
     run(f'cp {pwd}/.bash_profile ~/.bash_profile')
     run(f'cp {pwd}/.xinitrc ~/.xinitrc')
     run(f'cp {pwd}/.Xresources ~/.Xresources')
     run(f'cp {pwd}/.zprofile ~/.zprofile')
+    run(f'cp {pwd}/.zsh_aliases.zsh ~/.zsh_aliases.zsh')
+    run(f'cp {pwd}/.zsh_functions.zsh ~/.zsh_functions.zsh')
     run(f'cp {pwd}/.zshrc ~/.zshrc')
     run(f'cp {pwd}/sudoers.lecture /etc/sudoers.lecture')
 
