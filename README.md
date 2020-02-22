@@ -12,7 +12,7 @@ This repository contains my configuration for my Arch Linux distro, which I use 
 Clone this repo
 
 ```bash
-git clone && cd ~/repos/dotfiles
+git clone git@github.com:pelonchasva/dotfiles.git && cd ~/repos/dotfiles
 ```
 
 As an additional step, in order to avoid typing your user password everytime when using sudo, add a temporary environment variable to provide this value when running the installer
