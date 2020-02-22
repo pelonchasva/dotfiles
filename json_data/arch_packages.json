@@ -15,6 +15,11 @@
         "description": ""
     },
     {
+        "name": "zsh",
+        "url": "",
+        "description": ""
+    },
+    {
         "name": "sddm",
         "url": "",
         "description": ""
