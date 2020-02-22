@@ -2,7 +2,7 @@ import os
 import json
 
 arch_dependencies = ['base-devel']
-arch_packages = ['sddm', 'neofetch', 'nitrogen', 'iw', 'light', 'i3-gaps', 'dash', 'dunst', 'compton', 'lshw', 'rofi', 'termite', 'feh', 'python-dbus', 'python-pip', 'wget', 'xterm', 'xrandr', 'pulseaudio', 'pulseaudio-alsa', 'alsa-utils', 'firefox', 'openssh', 'git', 'dmidecode', 'ranger', 'scrot', 'khal', 'mpd', 'ncmpcpp', 'p7zip', 'redshift', 'vdirsyncer', 'mopidy', 'wireguard-tools', 'wireguard-arch', 'keepassxc', 'htop', 'thunar', 'openbox', 'obconf', 'gimp', 'libreoffice-still', 'picom']
+arch_packages = ['xorg', 'xorg-server', 'xorg-xinit', 'sddm', 'neofetch', 'nitrogen', 'iw', 'light', 'i3-gaps', 'dash', 'dunst', 'compton', 'lshw', 'rofi', 'termite', 'feh', 'python-dbus', 'python-pip', 'wget', 'xterm', 'xrandr', 'pulseaudio', 'pulseaudio-alsa', 'alsa-utils', 'firefox', 'openssh', 'git', 'dmidecode', 'ranger', 'scrot', 'khal', 'mpd', 'ncmpcpp', 'p7zip', 'redshift', 'vdirsyncer', 'mopidy', 'wireguard-tools', 'wireguard-arch', 'keepassxc', 'htop', 'thunar', 'openbox', 'obconf', 'gimp', 'libreoffice-still', 'picom']
 aur_packages = ['polybar', 'compton-tyrone-git', 'yay', 'cava', 'dropbox', 'ttf-google-sans', 'pipes.sh']
 yay_packages = ['mopidy-spotify', 'gotop']
 python_packages = ['requests', 'bs4', 'html5lib', 'tqdm', 'wheel', 'mopidy-iris']

@@ -17,6 +17,8 @@ buildhere = f'{pwd}/buildhere'
 json_data_path = f'{pwd}/json_data'
 scripts_path = f'{pwd}/scripts'
 
+SUDO_PASSWORD = os.environ['SUDO_PASSWORD']
+
 def get_config_locat():
     """
     Scans the .config directory and retrieves the folders name in a list
@@ -70,7 +72,7 @@ def install_arch_packages():
     packages = " ".join(arch_packages)
 
     print('Installing packages from ARCH repositories')
-    run(f'sudo pacman -S {packages} --noconfirm')
+    run(f'echo "{SUDO_PASSWORD}" | sudo -S pacman -S {packages} --noconfirm')
 
 def install_arch_deps():
     """
@@ -85,7 +87,7 @@ def install_arch_deps():
     deps = " ".join(arch_dependencies)
 
     print('Installing AUR dependencies')
-    run(f'sudo pacman -S {deps} --noconfirm')
+    run(f'echo "{SUDO_PASSWORD}" | sudo -S pacman -S {deps} --noconfirm')
 
 def install_aur_packages():
     """
@@ -119,7 +121,7 @@ def install_yay_packages():
     yay = " ".join(yay_packages)
 
     print('Installing YAY packages')
-    run(f'sudo yay -S {yay}')
+    run(f'echo "{SUDO_PASSWORD}" | sudo -S yay -S {yay}')
 
 def install_python_packages():
     """
@@ -134,7 +136,7 @@ def install_python_packages():
     packages = " ".join(python_packages)
 
     print("Installing Python packages")
-    run(f"sudo python3 -m pip install {packages}")
+    run(f"echo '{SUDO_PASSWORD}' | sudo -S python3 -m pip install {packages}")
 
 def install_zsh():
     """
@@ -156,7 +158,7 @@ def install_ttf_fonts():
     packages = " ".join(ttf_fonts)
 
     print("Installing TTF Fonts")
-    run(f"pacman -S {packages} --noconfirm")
+    run(f"echo '{SUDO_PASSWORD}' | sudo -S pacman -S {packages} --noconfirm")
 
 def install_otf_fonts():
     """
@@ -171,7 +173,7 @@ def install_otf_fonts():
     packages = " ".join(otf_fonts)
 
     print("Installing OTF Fonts")
-    run(f"pacman -S {packages} --noconfirm")
+    run(f"echo '{SUDO_PASSWORD}' | sudo -S pacman -S {packages} --noconfirm")
 
 def set_resolution(display, resolution):
     """
@@ -214,7 +216,7 @@ def cleanup():
     run('rm -f ~/.zsh_aliases.zsh')
     run('rm -f ~/.zsh_functions.zsh')
     run('rm -f ~/.zshrc')
-    run('rm -f ~/etc/sudoers.lecture')
+    run('sudo rm -f ~/etc/sudoers.lecture')
 
 def copy_config():
     """
@@ -242,7 +244,7 @@ def copy_config():
     run(f'cp {pwd}/.zsh_aliases.zsh ~/.zsh_aliases.zsh')
     run(f'cp {pwd}/.zsh_functions.zsh ~/.zsh_functions.zsh')
     run(f'cp {pwd}/.zshrc ~/.zshrc')
-    run(f'cp {pwd}/sudoers.lecture /etc/sudoers.lecture')
+    run(f'sudo cp {pwd}/sudoers.lecture /etc/sudoers.lecture')
 
 def symlink():
     """
@@ -317,8 +319,8 @@ def main():
     cleanup()
 
     # Start installation
-    install_arch_packages()
     install_arch_deps()
+    install_arch_packages()
     install_aur_packages()
     install_yay_packages()
     install_python_packages()
