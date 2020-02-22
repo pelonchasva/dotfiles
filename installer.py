@@ -105,7 +105,7 @@ def install_aur_packages():
         print(f"Installing package {package}...")
 
         run(f"git clone https://aur.archlinux.org/{package} {buildhere}")
-        run(f"cd {buildhere} && makepkg -si")
+        run(f"cd {buildhere} && makepkg -si --noconfirm")
         run(f"cd {pwd}/ && rm -rf {buildhere}")
 
 def install_yay_packages():
